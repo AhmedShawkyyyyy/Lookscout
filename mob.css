@@ -1,0 +1,88 @@
+.container {
+  width: 95%;
+}
+
+header .middle {
+  display: none;
+}
+header .right {
+  display: none;
+}
+section.second-sec .container {
+  width: 95%;
+  grid-template-columns: 1fr;
+}
+.third-sec .container {
+  grid-template-columns: 1fr;
+}
+section.second-sec .container .right-side {
+  & .row {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+}
+footer .container .footer-content {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+footer {
+  & .container {
+    & .footer-content {
+      & .brand-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.input {
+  min-height: 50px;
+  width: 220px;
+  padding: 0 1rem;
+  color: var(--font-color-primary);
+  font-size: 15px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  background-color: var(--base);
+}
+.third-sec .container {
+  & .div2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+section.header-title .title {
+  width: 95%;
+  margin: auto;
+  size: 42px;
+}
+.fourth-sec .container .parent {
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto; /
+}
+
+.fourth-sec .container .div6,
+.fourth-sec .container .div7,
+.fourth-sec .container .div8 {
+  grid-column: auto !important;
+  grid-row: auto !important;
+}
+
+.fourth-sec .container .parent img {
+  max-width: 100%;
+}
+header i {
+  display: block !important;
+}
+header nav {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  text-align: end;
+}
